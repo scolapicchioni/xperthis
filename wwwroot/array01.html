@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        const list01 = []
+        console.log(list01.length)
+        list01[5] = "hi"
+        console.log(list01.length)
+
+        const list02 = ["hi", 25, true,,,, {}, [], null]
+
+        for ( let i=0 ; i < list02.length ; i++ ){
+            console.log(list02[i])
+        }
+
+        const obj1 = {}
+    obj1.description = "Stuff"
+    obj1.destination = "Blah"
+
+    const obj2 = {
+        description : "Stuff",
+        destination : "Blah"
+    }
+    
+    </script>
+</body>
+</html>

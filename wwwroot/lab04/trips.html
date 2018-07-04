@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trips</title>
+    <link rel="stylesheet" href="trips.css">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="trips.html">All Trips</a></li>
+                <li><a href="addtrip.html">Add Trip</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h1>My Trips</h1>
+            </header>    
+            <section id="trips">
+                
+            </section>
+        </main>
+        <footer>
+            <p>© Simona 2018</p>
+        </footer>
+    </div>
+    <template id="trip-template">
+        <article>
+                <dl>
+                    <dt>Id</dt>
+                    <dd class="id"></dd>
+                    <dt>Destination</dt>
+                    <dd class="destination"></dd>
+                    <dt>Date</dt>
+                    <dd class="date"></dd>
+                    <dt>Description</dt>
+                    <dd class="description"></dd>
+                    <dt>Rating</dt>
+                    <dd class="rating"></dd>
+                </dl>
+            </article>
+    </template> 
+    <script src="trips.js"></script>
+</body>
+</html>

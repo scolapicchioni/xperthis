@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Templates</title>
+</head>
+<body>
+    <section id="trips">
+
+    </section>
+
+    <template id="trip-template">
+        <article>
+            <div>
+                Destination
+            </div>
+            <div class="destination">
+
+            </div>
+            <div>
+                Description
+            </div>
+            <div class="description">
+
+            </div>         
+        </article>
+    </template>
+    <script>
+        const firstTrip = {}
+        firstTrip.destination = 'Rome'
+        firstTrip.description = 'Great city!'
+
+        const target = document.getElementById('trips')
+
+        const tripTemplate = document.getElementById('trip-template')
+        
+        const theTripElement = document.importNode(tripTemplate.content, true);
+        
+        const dest = theTripElement.querySelector('.destination')
+        dest.textContent = firstTrip.destination
+        const desc = theTripElement.querySelector('.description')
+        desc.textContent = firstTrip.description
+
+        target.appendChild(theTripElement)
+    </script>
+</body>
+</html>
