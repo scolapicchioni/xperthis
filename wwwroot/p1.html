@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Page</title>
+    <link href="site.css" rel="stylesheet" type="text/css" />
+    <style>
+        h1 {
+            background-color: blue;
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red" onclick="alert('hi');">Oh HI!</h1>
+    <h1 id="my-h1">No style here</h1>
+    
+    <a href="p2.html">Click here to go to page 2</a>
+    <a href="book.html">Click here to go to the begin of the book</a>
+    
+    <a href="book.html#C4">Click here to go to the begin of the book</a>
+    
+    <script>
+        alert('hi from the page!')
+
+        const myHeader = document.getElementById('my-h1')
+        myHeader.addEventListener('click',myFunction)
+
+        function myFunction()
+        {
+            alert('hi')
+        }
+    </script>
+    <script src="p1.js"></script>
+</body>
+</html>

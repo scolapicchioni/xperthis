@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        body {
+            background-color : #bada55;
+            color: rgb(255,255,255);
+            padding:0;
+            margin:0;
+            font-size: 10vh;
+        }
+        #second {
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        
+        .important {
+            color:orange;
+        }
+        ul>li {
+            border: 5px solid red;
+        }
+        /* ol li {
+            border-style: solid;
+            border-color: bisque;
+            border-width: 5px;
+        } */
+
+        #myitem ~ li{
+            border:5px dotted blue;
+        }
+        #myitem + li{
+            border: 5px groove yellow;
+        }
+
+        input[type=text]{
+            background-color: aquamarine;
+            border-radius: 5px;
+            border: 3px solid black;
+            padding:10px;
+            margin:10px;
+        }
+        select[multiselect]{
+
+        }
+        p, body, h1, h2, h3 {
+
+        }
+        nav > ul > li > a {
+
+        }
+        p.important {
+
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            font-weight:bold;
+        }
+        input:focus{
+            box-shadow: 10px 10px 20px black;
+        }
+        p::first-line{
+            background-color:orangered;
+        }
+        p::first-letter{
+            font-size:3em;
+        }
+        section {
+            height: 100vh;
+            width:100vw;
+            border:1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+            <h1>Welcome</h1>
+            <p>FIrst Par</p>
+            <p id="second">Second Par</p>
+            <p>Third Par</p>
+        
+            <p class="important">This is important</p>
+            <p>This is not important</p>
+            <h3 class="important"> This is also important</h3>
+        
+    </section>
+<section>
+        <ul>
+                <li>First Item of the outer list
+                    <ol>
+                        <li>First item of the inner list</li>
+                        <li>Second item of the inner list</li>
+                        <li>Third item of the inner list</li>
+                    </ol>
+                </li>
+                <li>Second Item of the outer list</li>
+                <li>Third Item of the outer list</li>
+            </ul>
+</section>    
+    
+<section>
+        <ol>
+                <li>First item</li>
+                <li id="myitem">Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+                <li>Fifth item</li>
+            </ol>
+        
+            <input type="text">
+            <input type="number">
+            <input type="text">
+            <input type="number">        
+</section>
+    <section>
+            <nav>
+                    <ul>
+                        <li><a href="bla.html">Bla</a></li>
+                    </ul>
+                </nav>
+                <a href="bla.html">Bla</a>
+                <p>
+                        Tenderloin tongue pork chop, cow landjaeger pork loin jowl. Pork chop t-bone tongue pastrami hamburger bresaola jerky beef ribs, corned beef cupim. Meatball prosciutto frankfurter bresaola chuck biltong shank swine landjaeger porchetta pork loin fatback buffalo drumstick. Pig burgdoggen short loin ball tip. Tongue tail bacon pork belly. Leberkas turkey tongue andouille meatball pork loin swine fatback spare ribs. Frankfurter cupim boudin shoulder andouille.
+            
+                        Chicken pancetta flank pig tail tenderloin. Turkey jerky hamburger venison. Kielbasa tail boudin strip steak, turducken venison alcatra kevin. Porchetta meatloaf corned beef tail cow burgdoggen bresaola cupim jowl chicken meatball turkey.
+                        
+                        Jowl jerky chuck, pig meatloaf ribeye leberkas landjaeger boudin beef ribs shank frankfurter burgdoggen. Hamburger sirloin capicola beef beef ribs tri-tip. Ground round pork loin buffalo cupim landjaeger. Pork belly capicola meatball shoulder, doner ball tip burgdoggen flank pork chop short ribs chuck.
+                        
+                        T-bone brisket ground round kielbasa tail pork. Doner jowl pork chop, venison pork belly pig salami landjaeger short ribs beef ribs brisket kevin. Pork sausage filet mignon, frankfurter biltong pork belly tail. Ground round chicken brisket pork loin sirloin venison meatball picanha ball tip porchetta boudin tri-tip. Short loin turducken beef ribs, spare ribs beef strip steak fatback.
+                        
+                        
+                </p>
+    </section>
+    
+</body>
+</html>

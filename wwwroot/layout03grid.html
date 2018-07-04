@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+        section{
+            background-color: bisque;
+            display:grid;
+        }
+        article{
+            border:1px solid black;
+            background-color:lavender;
+        }
+
+        #container1{
+            height: 200px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        #container2{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 10px;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <section id="container1">
+        <article id="a1">First</article>
+        <article id="a2">Second</article>
+        <article id="a3">Third</article>
+    </section>
+
+    <br/>
+    
+    <section id="container2">
+        <article id="a4">01</article>
+        <article id="a5">02</article>
+        <article id="a6">03</article>
+        <article id="a7">04</article>
+        <article id="a8">05</article>
+        <article id="a9">06</article>
+        <article id="a10">07</article>
+        <article id="a11">08</article>
+        <article id="a12">09</article>
+    </section>
+</body>
+</html>

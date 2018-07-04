@@ -1,0 +1,101 @@
+body, html{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem; 
+    box-sizing: border-box;
+}
+#container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height:100vh;
+    width:100vw;
+}
+#container > nav {
+    display: grid;
+    background-color:moccasin;
+    height: 10vh;
+}
+#container > nav > ul {
+    display: grid;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr;
+}
+#container > nav > ul > li {
+    margin:0;
+    display:grid;
+}
+#container > nav > ul > li > a {
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2vh;
+}
+#container > nav > ul > li > a:hover {
+    box-shadow: 2px 2px 2px white;
+    background-color: rgba(255,255,255,.2);
+    text-shadow: 1px 1px 1px black;
+}
+#container > main {
+    background-color:orange;
+}
+#container > main > header{
+    font-size: 1.5rem;    
+}
+#container > main > section{
+    display:grid;
+    margin: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+#container > main > section > article{
+    border:1px dotted lightgoldenrodyellow;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    min-height: 50vh;
+    background-color: rgba(255,255,255,.2);
+    padding: 5px;
+}
+#container > main > section > article> dl{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 5px;
+}
+#container > main > section > article> dl > dt{
+    font-weight: bold;
+    padding: 5px;
+    text-align: right;
+}
+#container > main > section > article> dl > dd{
+    text-align: justify;
+    padding: 5px;
+}
+#container > footer{
+    background-color:maroon;
+    height: 10vh;
+}
+#container p:first-child {
+    margin-top: 0px ;
+}
+#container p:last-child {
+    margin-bottom: 0px ;
+}
+@media screen and (max-width:400px){
+    #container > main > section{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:401px) and (max-width:799px){
+    #container > main > section{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:800px){
+    #container > main > section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
