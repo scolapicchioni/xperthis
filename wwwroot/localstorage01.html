@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LocalStorage</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem('key01', 'value01')
+        console.log(localStorage.length)
+        console.log(localStorage.getItem('key01'))
+        console.log(localStorage.key(0))
+        const obj1 = {
+            id:1, 
+            name: "Mario"
+        }
+        localStorage.setItem('key02', JSON.stringify(obj1))
+        const result = JSON.parse(localStorage.getItem('key02'))
+        
+        console.log(JSON.stringify(obj1))
+        const theString = '{"id":1,"name":"Mario"}'
+        const obj = JSON.parse(theString)
+        console.log(obj.name)
+        console.log(obj.id)
+        
+    </script>
+</body>
+</html>
