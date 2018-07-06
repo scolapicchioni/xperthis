@@ -20,3 +20,8 @@
 - http://specflow.org/
 - https://cucumber.io/
 - https://github.com/dotnet-architecture/eShopOnContainers
+- https://developers.google.com/web/progressive-web-apps/
+- https://developers.google.com/web/ilt/pwa/
+- https://developers.google.com/web/fundamentals/codelabs/
+- https://developers.google.com/web/updates/2015/12/background-sync
+- https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications
