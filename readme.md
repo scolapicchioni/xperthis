@@ -30,3 +30,4 @@
 - https://codecombat.com/
 - https://checkio.org/
 - https://www.codewars.com/
+- https://skillcrush.com/2017/04/03/free-coding-games/
