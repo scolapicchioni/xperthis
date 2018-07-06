@@ -1,11 +1,18 @@
-import Trip from "./trip.js";
+
 export default class TripsRepository{
     async getAllTripsAsync(){
-        const response = await fetch('../tripsfromtheserver.txt')
+        const response = await fetch('/api/trips')
         return response.json()
     }
-    addTrip(trip){
-        trip.id = localStorage.length===0 ? 1 : Math.max(...this.getAllTrips().map(item=> item.id)) + 1;
-        localStorage.setItem(trip.id, JSON.stringify(trip))
+    async addTripAsync(trip){
+        const rawResponse = await fetch('/api/trips', {
+            method: 'POST',
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(trip)
+        });
+        return rawResponse.json();
     }
 }

@@ -15,12 +15,12 @@ export default class ViewModel{
             tripform.classList.toggle('invisible')
         })
 
-        document.getElementById('save-trip').addEventListener('click', () => {
+        document.getElementById('save-trip').addEventListener('click', async () => {
             tripform.classList.toggle('invisible')
             try{
                 const newTrip = new Trip(0,newDestination.value,newDescription.value,newDate.value,+newRating.value)
             
-                this.repository.addTrip(newTrip)
+                await this.repository.addTripAsync(newTrip)
                 this.updateUI()
             }catch(error){
                 console.log(error)
