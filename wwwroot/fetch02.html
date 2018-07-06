@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fetch 02</title>
+</head>
+<body>
+    <button id="load">Load Data</button>
+    <script>
+        class Repository {
+            async getAllAsync(){
+                const response = await fetch('tripsfromtheserver.txt')
+                return response.json()
+            }
+        }
+        document.getElementById('load').addEventListener('click', handler)
+
+        async function handler(){
+            const repo = new Repository()
+            //repo.getAllAsync().then(list => console.log(list))
+
+            const list = await repo.getAllAsync()
+            console.log(list)
+        }
+    </script>
+</body>
+</html>

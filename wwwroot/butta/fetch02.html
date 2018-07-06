@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="destination"/>
+    <input type="text" id="description"/>
+    <input type="text" id="date"/>
+    <input type="text" id="rating"/>
+
+    <button id="load">Load</button>
+    <button id="add">Add</button>
+    <div id="target"></div>
+
+    <script>
+        async function loadAsync(){
+            const response = await fetch('/api/trips')
+            return await response.json()
+        }
+        async function addAsync(){
+            const trip = {
+                id : 0,
+                destination: document.getElementById("destination").value,
+                description: document.getElementById("description").value,
+                date: document.getElementById("date").value,
+                rating: document.getElementById("rating").value
+            }
+            const response = await fetch('/api/trips', {
+                method: 'post',
+                body: JSON.stringify(trip),
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            })
+            return await response.json()
+        }
+        document.getElementById("load").addEventListener('click', async () => {
+            const res = await loadAsync()
+            console.log(res)
+            
+        })
+        document.getElementById("add").addEventListener('click', async () => {
+            const res = await addAsync()
+            console.log(res)
+            
+        })
+    </script>
+</body>
+</html>

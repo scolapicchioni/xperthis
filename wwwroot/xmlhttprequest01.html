@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XMLHttpRequest</title>
+</head>
+<body>
+    <button id="load">Load Data</button>
+    <script>
+        document.getElementById('load').addEventListener('click', loadData)
+
+        function loadData(){
+            const req = new XMLHttpRequest()
+            req.onreadystatechange = function(){
+                console.log(req.readyState)
+                if(req.readyState===4){
+                    console.log(req.responseText)
+                    console.log(req.status)
+                    console.log(req.statusText)
+                }
+            }
+
+            req.open('get','tripsfromtheserver.txt', true)
+
+            req.send()
+            console.log("I'm here now")
+        }
+    </script>
+</body>
+</html>

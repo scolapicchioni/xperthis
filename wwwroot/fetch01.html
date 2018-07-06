@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fetch01</title>
+</head>
+<body>
+    <button id="load">Load Data</button>
+    <script>
+        // document.getElementById("load").addEventListener('click', function(){
+        //    const promise = fetch('tripsfromtheserver.txt')
+        //    promise.then(c1)
+        // })
+        // function c1(response){
+        //     console.log("fetch is ready")
+        //     console.log(response)
+        //     const result = response.json()
+        //     result.then(c2)
+        // }
+        // function c2(list){
+        //     console.log(list)
+        // }
+
+        // document.getElementById("load").addEventListener('click', function(){
+        //    const promise = fetch('tripsfromtheserver.txt')
+        //    promise
+        //     .then(c1)
+        //     .then(c2)
+        // })
+        // function c1(response){
+        //     console.log("fetch is ready")
+        //     console.log(response)
+        //     const result = response.json()
+        //     return result
+        // }
+        // function c2(list){
+        //     console.log(list)
+        // }
+
+        // document.getElementById("load").addEventListener('click', function(){
+        //    fetch('tripsfromtheserver.txt')
+        //     .then(response => response.json())
+        //     .then(list => console.log(list))
+        //      .catch(error => console.log(error))
+        // })
+
+
+        document.getElementById("load").addEventListener('click', async function(){
+            try{
+                const response = await fetch('tripsfromtheserver.txt')
+                const list = await response.json()
+                console.log(list)
+            }catch(error){
+                console.log(error)
+            }
+        })
+    </script>
+</body>
+</html>

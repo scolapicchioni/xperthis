@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XMLHttpRequest 02</title>
+</head>
+<body>
+    <script>
+        class Repository {
+            getAll(callbackfunction){
+                const req = new XMLHttpRequest()
+                req.onreadystatechange = function(){
+                    console.log(req.readyState)
+                    if(req.readyState===4 && req.status===200){
+                        const trips = JSON.parse(req.responseText)
+                        callbackfunction(trips)
+                    }
+                }
+                req.open('get','tripsfromtheserver.txt', true)
+                req.send()
+                console.log("getAll is done")
+            }
+        }
+
+        const repo = new Repository()
+        const list = repo.getAll(callBack)
+        console.log("done")
+
+        function callBack(list){
+            console.log("we get the data!", list)
+        }
+
+        
+    </script>
+</body>
+</html>
