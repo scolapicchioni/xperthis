@@ -42,3 +42,4 @@
 - https://vuejs.org/
 - https://reactjs.academy/react-redux-graphql-bootcamp-london?gclid=EAIaIQobChMItaaljsiK3AIVa7XtCh3CUwUkEAAYASAAEgLjz_D_BwE
 - https://reactjs.org/
+- https://www.google.be/search?q=uncle+bob+expecting+professionalism&oq=uncle+bob+expecting+professionalism&aqs=chrome..69i57.6849j0j7&sourceid=chrome&ie=UTF-8
