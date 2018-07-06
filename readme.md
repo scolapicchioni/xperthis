@@ -31,3 +31,14 @@
 - https://checkio.org/
 - https://www.codewars.com/
 - https://skillcrush.com/2017/04/03/free-coding-games/
+- https://sass-lang.com/
+- https://www.typescriptlang.org/
+- https://babeljs.io/
+- https://webpack.js.org/
+- https://getbootstrap.com/
+- https://material.io/develop/
+- https://github.com/material-components/material-components-web
+- https://angular.io/
+- https://vuejs.org/
+- https://reactjs.academy/react-redux-graphql-bootcamp-london?gclid=EAIaIQobChMItaaljsiK3AIVa7XtCh3CUwUkEAAYASAAEgLjz_D_BwE
+- https://reactjs.org/
