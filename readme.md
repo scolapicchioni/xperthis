@@ -25,3 +25,8 @@
 - https://developers.google.com/web/fundamentals/codelabs/
 - https://developers.google.com/web/updates/2015/12/background-sync
 - https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications
+
+- https://www.codingame.com/start
+- https://codecombat.com/
+- https://checkio.org/
+- https://www.codewars.com/
