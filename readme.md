@@ -16,3 +16,7 @@
 - http://exploringjs.com/es6/
 - https://developer.mozilla.org/en-US/docs/Web
 - https://bento.io
+- https://developers.google.com/web/fundamentals/primers/promises
+- http://specflow.org/
+- https://cucumber.io/
+- https://github.com/dotnet-architecture/eShopOnContainers
