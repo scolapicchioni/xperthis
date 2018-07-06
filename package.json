@@ -1,0 +1,22 @@
+{
+  "name": "cursus",
+  "version": "1.0.0",
+  "description": "- https://www.w3schools.com/\r - https://flexboxfroggy.com/\r - http://www.flexboxdefense.com/\r - https://cssgridgarden.com/\r - http://www.csszengarden.com/\r - https://codepen.io/agoodwin/pen/gKpKqw\r - https://codepen.io/Wujek_Greg/pen/KRXYpg\r - https://codepen.io/Wujek_Greg/pen/LmrweG\r - https://codepen.io/jonhickman/pen/zPyOgp\r - http://shop.oreilly.com/product/9780596805531.do\r - https://leanpub.com/understandinges6/read/\r - http://exploringjs.com/es6/\r - https://developer.mozilla.org/en-US/docs/Web\r - https://bento.io\r - https://developers.google.com/web/fundamentals/primers/promises\r - http://specflow.org/\r - https://cucumber.io/\r - https://github.com/dotnet-architecture/eShopOnContainers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scolapicchioni/xperthis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scolapicchioni/xperthis/issues"
+  },
+  "homepage": "https://github.com/scolapicchioni/xperthis#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
